@@ -3,10 +3,15 @@
 
 
     import createClient from '$lib/prismicClient';
-    import  * as prismicH from '@prismicio/helpers';
+    // import  * as prismicH from '@prismicio/helpers';
+
+
+    import * as prismicH from '@prismicio/helpers';
+  export let data;
+  const {  document }  = data;
     
-    const client = createClient()
-    const prismicQuery = client.getFirst()
+    // const client = createClient()
+    // const prismicQuery = client.getFirst()
   </script>
 
 
@@ -14,18 +19,21 @@
 
 
   
-  {#await prismicQuery}
+  <!-- {#await prismicQuery}
     <p>Loading...</p>
   {:then prismicResponse}
     <h1>{prismicH.asText(prismicResponse.data.title)}</h1>
     {@html prismicH.asHTML(prismicResponse.data.description)}
   {:catch error}
     <pre>{error.message}</pre>
-  {/await}
+  {/await} -->
 
 
 
+  <p class="text"> {@html prismicH.asHTML(document.data.naam)}</p>
+  
 
+  <img src={document.data.profielfoto.url} alt="test">
 
 
 

@@ -1,10 +1,18 @@
 <script>
-    import createClient from '$lib/prismicio';
+    import Header from "$lib/components/Header.svelte";
+
+
+    import createClient from '$lib/prismicClient';
     import  * as prismicH from '@prismicio/helpers';
     
     const client = createClient()
     const prismicQuery = client.getFirst()
   </script>
+
+
+<Header/>
+
+
   
   {#await prismicQuery}
     <p>Loading...</p>

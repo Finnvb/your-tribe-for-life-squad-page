@@ -1,7 +1,5 @@
 <script>
     import Header from "$lib/components/Header.svelte";
-
-
     import createClient from '$lib/prismicClient';
     // import  * as prismicH from '@prismicio/helpers';
 

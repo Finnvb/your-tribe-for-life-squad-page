@@ -1,41 +1,40 @@
 <script>
     import Header from "$lib/components/Header.svelte";
+    import MainContent from "$lib/components/MainContent.svelte";
+    import "../styles/style.css";
 
-
-    import createClient from '$lib/prismicClient';
-    // import  * as prismicH from '@prismicio/helpers';
 
 
     import * as prismicH from '@prismicio/helpers';
   export let data;
   const {  document }  = data;
     
-    // const client = createClient()
-    // const prismicQuery = client.getFirst()
+
   </script>
 
 
-<Header/>
+<Header />
+<main>
+<MainContent title={'Leerjaar 1'} text={'The founders'} image={'leerjaar1.jpg'}/>
+<MainContent title={'Leerjaar 2'} text={'The second generation'} image={'leerjaar2.jpg'}/>
+<MainContent title={'Soon..'} text={'The future'} image={'soon.jpg'}/>
+</main>
 
 
-  
-  <!-- {#await prismicQuery}
-    <p>Loading...</p>
-  {:then prismicResponse}
-    <h1>{prismicH.asText(prismicResponse.data.title)}</h1>
-    {@html prismicH.asHTML(prismicResponse.data.description)}
-  {:catch error}
-    <pre>{error.message}</pre>
-  {/await} -->
-
-
-
-  <p class="text"> {@html prismicH.asHTML(document.data.naam)}</p>
+  <!-- <p class="text"> {@html prismicH.asHTML(document.data.naam)}</p> -->
   
 
-  <img src={document.data.profielfoto.url} alt="test">
+  <!-- <img src={document.data.profielfoto.url} alt="test"> -->
 
 
+<style>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+main {
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        color: #ffffff;
+    }
+</style>

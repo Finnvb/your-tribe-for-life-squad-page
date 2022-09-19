@@ -1,12 +1,17 @@
 <script>
+     export let image;
+
+  
 </script>
 
 <header>
   <h1>FDND.</h1>
 
   <div>
-    <img src="hamburger-menu.svg" alt="" />
+
+    <img src="{image}" alt="menuButton" on:click={console.log("hallo")}/>
     <p>Menu</p>
+  
   </div>
 </header>
 

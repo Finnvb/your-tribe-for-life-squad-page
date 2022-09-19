@@ -13,7 +13,7 @@
   </script>
 
 
-<Header />
+<Header image={'hamburger-menu.svg'}/>
 <main>
 <MainContent title={'Leerjaar 1'} text={'The founders'} image={'leerjaar1.jpg'}/>
 <MainContent title={'Leerjaar 2'} text={'The second generation'} image={'leerjaar2.jpg'}/>

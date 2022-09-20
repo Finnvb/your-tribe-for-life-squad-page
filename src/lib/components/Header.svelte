@@ -45,7 +45,6 @@
         alt="hamburgerImg"
       />
     </div>
-    <!-- </button> -->
     <p  bind:this={text}>Menu</p>
   </div>
 </header>

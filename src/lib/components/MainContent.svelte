@@ -2,12 +2,18 @@
     export let title;
     export let text;
     export let image;
+    export let link;
 </script>
 
+
+
 <section>
+  
     <h2>{title}</h2>
     <p>{text}</p>
+    <a href={link}>
     <img src={image} alt="bgImage" />
+</a>
 </section>
 
 <style>
@@ -29,10 +35,12 @@
         /* filter: blur(0); */
     }
 
-    section:hover::before {
+    a:hover::before {
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
     }
+
+    
 
     img {
         width: 100%;
@@ -54,7 +62,7 @@
         z-index: 10;
     }
 
-    section::before {
+    a::before {
         content: "";
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5);
@@ -64,6 +72,11 @@
         height: 100%;
         z-index: 2;
     }
+
+a{
+    z-index: 5;
+}
+
 
     @media (max-width: 40em) {
         img {

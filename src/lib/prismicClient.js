@@ -1,7 +1,8 @@
 import * as prismic from '@prismicio/client'
 
 // Update your repository name here
-const repositoryName = 'visitekaartjefvb'
+// const repositoryName = 'visitekaartjefvb'
+const repositoryName = 'fdndtribe'
 
 const createClient = (params) => {
   const client = prismic.createClient(repositoryName, params)

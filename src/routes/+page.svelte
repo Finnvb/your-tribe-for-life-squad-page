@@ -16,7 +16,7 @@
 <Header image={'hamburgerMenu.svg'}/>
 <main>
 <MainContent title={'Leerjaar 1'} text={'The founders'} image={'leerjaar1.jpg'} link={'/leerjaar1'}/>
-<MainContent title={'Leerjaar 2'} text={'The second generation'} image={'leerjaar2.jpg'} link={'/test'}/>
+<MainContent title={'Leerjaar 2'} text={'The second generation'} image={'leerjaar2.jpg'} link={'/leerjaar2'}/>
 <MainContent title={'Soon..'} text={'The future'} image={'soon.jpg'} link={'/'}/>
 </main>
 

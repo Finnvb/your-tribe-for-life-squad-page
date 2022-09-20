@@ -4,17 +4,13 @@
     export let image;
 </script>
 
-
-    <section >
-        <h2>{title}</h2>
-        <p>{text}</p>
-        <img src="{image}" alt="bgImage">
-    </section>
-
+<section>
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <img src={image} alt="bgImage" />
+</section>
 
 <style>
-
-
     section {
         background-color: black;
         display: flex;
@@ -26,12 +22,9 @@
         height: 100vh;
         position: relative;
         transition: 400ms;
- 
- 
-      
     }
 
-    section:hover{
+    section:hover {
         width: 40%;
         /* filter: blur(0); */
     }
@@ -39,11 +32,9 @@
     section:hover::before {
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
-    
-
     }
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -53,7 +44,6 @@
         /* filter: blur(2px); */
     }
 
- 
     h2 {
         font-weight: bold;
         font-size: 3rem;
@@ -64,7 +54,6 @@
         z-index: 10;
     }
 
-
     section::before {
         content: "";
         position: absolute;
@@ -74,8 +63,16 @@
         width: 100%;
         height: 100%;
         z-index: 2;
- 
-    
     }
 
+    @media (max-width: 40em) {
+        img {
+            width: 100vw;
+        }
+
+        section:hover {
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+        }
+    }
 </style>

@@ -13,7 +13,7 @@
   </script>
 
 
-<Header image={'hamburger-menu.svg'}/>
+<Header image={'hamburgerMenu.svg'}/>
 <main>
 <MainContent title={'Leerjaar 1'} text={'The founders'} image={'leerjaar1.jpg'}/>
 <MainContent title={'Leerjaar 2'} text={'The second generation'} image={'leerjaar2.jpg'}/>
@@ -34,7 +34,15 @@ main {
         position: absolute;
         top: 0;
         width: 100vw;
-        z-index: -1;
+        z-index: -2;
         color: #ffffff;
     }
+
+    @media (max-width: 40em) {
+
+main{
+    flex-direction: column;
+   
+}
+}
 </style>

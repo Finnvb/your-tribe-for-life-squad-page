@@ -17,7 +17,7 @@
 		<h2
 			>{@html prismicH.asHTML(data.data.name)}</h2
 		>
-		<img src="/assets/images/Justin.jpeg" alt="profilephoto" />
+		<img src="/assets/images/{data.uid}.jpg" alt="profilephoto" />
 
     <!-- <img src={data.data.github} alt="test">  -->
 
@@ -180,7 +180,7 @@ a:hover{
   }
 
   .detailcard h2 {
-			font-size: 5rem;
+			font-size: 3rem;
   }
 
   img{

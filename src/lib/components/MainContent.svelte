@@ -32,7 +32,6 @@
 
     section:hover {
         width: 40%;
-        /* filter: blur(0); */
     }
 
     a:hover::before {
@@ -49,13 +48,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        /* filter: blur(2px); */
     }
+
 
     h2 {
         font-weight: bold;
         font-size: 3rem;
         z-index: 10;
+        width: 4rem;
     }
 
     p {

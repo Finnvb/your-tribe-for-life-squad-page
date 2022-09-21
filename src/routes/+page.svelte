@@ -8,6 +8,7 @@
     import * as prismicH from '@prismicio/helpers';
   export let data;
   const {  document }  = data;
+  console.log(document);
     
 
   </script>
@@ -21,7 +22,7 @@
 </main>
 
 
-  <!-- <p class="text"> {@html prismicH.asHTML(document.data.name)}</p> -->
+  <!-- <p class="text"> {@html prismicH.asHTML(document[0].data.name)}</p> -->
   
 
   <!-- <img src={document.data.profielfoto.url} alt="test"> -->

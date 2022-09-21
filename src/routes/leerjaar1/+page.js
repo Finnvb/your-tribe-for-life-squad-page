@@ -1,9 +1,8 @@
 import createClient from '$lib/prismicClient'
 
 export async function load({ fetch, request }) {
-	const UID = 'finn';
 	const client = createClient({ fetch, request });
-	const document = await client.getByUID('visitekaartje', UID);
+	const document = await client.getAllByType('visitekaartje');
 
 //   console.log(document);
 

@@ -3,7 +3,8 @@
  import Header from "$lib/components/Header.svelte";
 
  import * as prismicH from '@prismicio/helpers';
-  export let data;
+ export let data
+ console.log(data)
   const {  document }  = data;
 
 </script>
@@ -13,11 +14,10 @@
     <h1>Leerjaar 1</h1>
 
 <ul>
-    <li><a href="/#">{@html prismicH.asHTML(document.data.name)}</a> </li>
-    <li><a href="/#">gwrefdsc</a> </li>
-    <li><a href="/#">gwrefdsc</a> </li>
-    <li><a href="/#">gwrefdsc</a> </li>
-
+    {#each data.document as data}
+    <li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.name)}</a> </li>
+    {/each}
+    
 </ul>
 
 </main>

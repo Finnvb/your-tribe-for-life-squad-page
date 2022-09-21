@@ -11,7 +11,7 @@
 
 <Header image={'hamburgerMenu.svg'}/>
 <main>
-    <h1>Leerjaar 1</h1>
+    <h1>Leerjaar 2021/2022</h1>
 
 <ul>
     {#each data.document as data}

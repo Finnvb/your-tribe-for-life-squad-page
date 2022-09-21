@@ -19,7 +19,8 @@
 		>
 		<img src="/assets/images/Justin.jpeg" alt="profilephoto" />
 
-    <!-- <img src={document.data.profielfoto.url} alt="test">  -->
+    <!-- <img src={data.data.github} alt="test">  -->
+
 <div class="info-container">
 		<div class="Info">
 			<h3>Bio:</h3>
@@ -28,9 +29,9 @@
 
 		<div class="links">
 			<ul>
-				<li>Profile Card</li>
-				<li>Github</li>
-				<li>Leerjaar 2</li>
+				<li><a href="">Profile Card</a></li>
+				<li><a href="{(data.data.github.url)}">Github</a></li>
+				<li><a href="/leerjaar1">The founders</a></li>
 			</ul>
 		</div>
   </div>
@@ -47,36 +48,35 @@
 
   <!-- {@html prismicH.asHTML(data.data.name)} -->
 <style>
-  p {
-    color: white;
-  }
-    :global(h2){
-        color: aliceblue;
-    }
 
 
 
 
+a{
+  color: #FFFFFF;
+  text-decoration: none;
 
+}
 
-
-
-
-
-
-
-
-
-
+a:hover{
+  border-bottom: 2.5px solid white;
+ 
+}
 
 
 	main {
-		margin: 1em;
+
+
+  display: flex;
+    justify-content: center;
+    align-items: center;
+		padding: 0 1rem;
 		margin-top: -0.5em;
 		color: white;
 		background-color: rgba(91, 91, 91, 1);
-    /* position: absolute; */
-    z-index: -2000;
+    position: absolute;
+    z-index: -3;
+    width: 90vw;
 
  
 	}
@@ -88,7 +88,8 @@
 		gap: 0.5em;
 		padding: 0.5em;
 		text-align: center;
-    width: 90vw;
+    /* width: 90vw; */
+
  
 	}
 	.detailcard h2 {
@@ -103,11 +104,11 @@
 		width: 90%;
 		filter: drop-shadow(0px 5px 25px #000000);
 	}
-	.detailcard span {
+	/* .detailcard span {
 		color: transparent;
 		-webkit-text-stroke-width: 3px;
 		-webkit-text-stroke-color: white;
-	}
+	} */
 
   .info-container{
     display: flex;
@@ -115,10 +116,7 @@
     align-items: center;
   }
 
-  .info-container h3{
   
-
-  }
 
 	.Info {
 		line-height: 1.5em;
@@ -131,9 +129,9 @@
 		padding: 0.5em;
 	}
 
-	.links li {
+	/* .links li {
 		border-bottom: 2.5px solid white;
-	}
+	} */
 
 	@media (min-width: 38.25rem) {
 		img {
@@ -156,9 +154,7 @@
 
 	@media (min-width: 50rem) {
 
-    .info-container{
-
-    }
+  
     .detailcard{
       text-align: start;
     }

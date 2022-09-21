@@ -9,7 +9,7 @@
         <li><a href="/">HOME</a></li>
         <li><a href="/">LEERJAREN</a></li>
         <li><a href="/">SQUADS</a></li>
-        <li><a href="/test">ABOUT US</a></li>
+        <li><a href="/">ABOUT US</a></li>
     </nav>
 
     <Footer name={"FDND"}/>

@@ -4,7 +4,7 @@ Dit is een squadpage waarin alle studenten van leerjaar 2 staan met links naar a
 
 ![afbeelding](![afbeelding](https://user-images.githubusercontent.com/26089533/191589857-40e5136f-f299-44b7-8cf2-d21ac96201f1.png))
 
-[Live versie](your-tribe-for-life-squad-page.vercel.app)
+[Live versie](https://your-tribe-for-life-squad-page.vercel.app/)
 
 ## Beschrijving
 

@@ -112,9 +112,16 @@
 		padding: 0.5em;
 	}
 
-	@media (min-width: 38.25rem) {
+	
+
+	@media (max-width: 30rem) {
 		img {
-			max-width: 70%;
+			max-width: 15rem;
+			height: 15rem;
+		}
+
+		.detailcard h2{
+			font-size: 2rem;
 		}
 	}
 
@@ -149,6 +156,8 @@
 		}
 	}
 
+
+
 	@media (min-width: 65rem) {
 		.info-container {
 			flex-direction: row;
@@ -162,5 +171,9 @@
 		img {
 			max-width: 35%;
 		}
+
+		
 	}
+
+	
 </style>

@@ -83,6 +83,12 @@ a{
             width: 100vw;
         }
 
+        a::before {
+       
+        background-color: rgba(0, 0, 0, 0);
+     
+    }
+
         section:hover {
             background-color: rgba(0, 0, 0, 0);
             cursor: pointer;

@@ -39,9 +39,15 @@ main{
     z-index: -3;
 }
 
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 li{
     list-style: none;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 a{
@@ -49,8 +55,21 @@ a{
     color: #FFFFFF;
 }
 
-.text{
-    color: #FFFFFF;
-}
+a{
+        text-decoration: none;
+        color: lightgray;
+        /* font-size: 2rem; */
+        /* font-weight: bold; */
+        transition: 300ms;
+    }
+
+
+    a:hover{
+        color:#FFFFFF;
+    }
+    li:hover{
+        transform: scale(1.2);
+     
+    }
 
 </style>

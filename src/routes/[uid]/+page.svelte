@@ -1,84 +1,71 @@
 <script>
-    export let data;
-    import * as prismicH from '@prismicio/helpers';
+	export let data;
+	import * as prismicH from "@prismicio/helpers";
 
-    import Header from "$lib/components/Header.svelte";
-    import { text } from 'svelte/internal';
+	import Header from "$lib/components/Header.svelte";
+	import Footer from "$lib/components/Footer.svelte";
+	import { text } from "svelte/internal";
 </script>
 
-
-
-<Header image={'hamburgerMenu.svg'}/>
-
-
+<Header image={"hamburgerMenu.svg"} />
 
 <main>
 	<section class="detailcard">
-		<h2
-			>{@html prismicH.asHTML(data.data.name)}</h2
-		>
-		<img src="/assets/images/{data.uid}.jpg" alt="profilephoto" />
-
-    <!-- <img src={data.data.github} alt="test">  -->
-
-<div class="info-container">
-		<div class="Info">
-			<h3>Bio:</h3>
-			<p>{@html prismicH.asHTML(data.data.bio)}</p>
+		<div class="image-container">
+			<h2>{@html prismicH.asHTML(data.data.name)}</h2>
+			<img src="/assets/images/{data.uid}.jpg" alt="profilephoto" />
 		</div>
 
-		<div class="links">
-			<ul>
-				<li><a href="">Profile Card</a></li>
-				<li><a href="{(data.data.github.url)}">Github</a></li>
-				<li><a href="/leerjaar1">The founders</a></li>
-			</ul>
+		<div class="info-container">
+			<div class="Info">
+				<h3>Bio:</h3>
+				<p>{@html prismicH.asHTML(data.data.bio)}</p>
+
+				<h3 class="role">Role:</h3>
+				<p>{data.data.role}</p>
+			</div>
+
+			<div class="links">
+				<ul>
+					<li><a href="">Profile Card</a></li>
+					<li><a href={data.data.github.url}>Github</a></li>
+					<li><a href="/leerjaar1">The founders</a></li>
+				</ul>
+			</div>
 		</div>
-  </div>
 	</section>
 </main>
 
-
-
-
-
-
-
-
-
-  <!-- {@html prismicH.asHTML(data.data.name)} -->
 <style>
+	a {
+		color: #ffffff;
+		text-decoration: none;
+	}
 
+	a:hover {
+		border-bottom: 2.5px solid white;
+	}
 
+	.role {
+		margin-top: 10px;
+	}
 
-
-a{
-  color: #FFFFFF;
-  text-decoration: none;
-
-}
-
-a:hover{
-  border-bottom: 2.5px solid white;
- 
-}
-
+	.image-container {
+		width: 20rem;
+		height: 20rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	main {
-
-
-  display: flex;
-    justify-content: center;
-    align-items: center;
-		padding: 0 1rem;
-		margin-top: -0.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		color: white;
-		background-color: rgba(91, 91, 91, 1);
-    position: absolute;
-    z-index: -3;
-    width: 90vw;
-
- 
+		position: absolute;
+		z-index: -3;
+		width: 100vw;
 	}
 	.detailcard {
 		display: flex;
@@ -86,37 +73,31 @@ a:hover{
 		align-items: center;
 		flex-direction: column;
 		gap: 0.5em;
-		padding: 0.5em;
+		padding: 2rem 2rem;
 		text-align: center;
-    /* width: 90vw; */
-
- 
+		background-color: rgba(91, 91, 91, 1);
+		width: 80vw;
 	}
 	.detailcard h2 {
 		font-size: 2.5em;
 		z-index: 99;
-    letter-spacing: 0.05em;
+		letter-spacing: 0.05em;
 	}
 	img {
-		/* position: absolute; */
-		padding: 1em;
-		height: auto;
-		width: 90%;
 		filter: drop-shadow(0px 5px 25px #000000);
+
+		width: 20rem;
+		height: 20rem;
+
+		object-fit: cover;
+		position: absolute;
 	}
-	/* .detailcard span {
-		color: transparent;
-		-webkit-text-stroke-width: 3px;
-		-webkit-text-stroke-color: white;
-	} */
 
-  .info-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  
+	.info-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.Info {
 		line-height: 1.5em;
@@ -128,10 +109,6 @@ a:hover{
 		gap: 2.5em;
 		padding: 0.5em;
 	}
-
-	/* .links li {
-		border-bottom: 2.5px solid white;
-	} */
 
 	@media (min-width: 38.25rem) {
 		img {
@@ -153,41 +130,35 @@ a:hover{
 	}
 
 	@media (min-width: 50rem) {
-
-  
-    .detailcard{
-      text-align: start;
-    }
+		.detailcard {
+			text-align: start;
+		}
 		.detailcard h2 {
-      position: absolute;
+			position: absolute;
 			font-size: 5.5rem;
 		}
 
 		img {
-			max-width:50%;
+			max-width: 50%;
 		}
 
-    .Info{
-     text-align:start;
-    }
-  }
+		.Info {
+			text-align: start;
+		}
+	}
 
-  @media (min-width: 65rem) {
+	@media (min-width: 65rem) {
+		.info-container {
+			flex-direction: row;
+			gap: 5.5em;
+		}
 
-  .info-container{
-    flex-direction: row;;
-    gap: 5.5em;
-  }
-
-  .detailcard h2 {
+		.detailcard h2 {
 			font-size: 3rem;
-  }
+		}
 
-  img{
-    max-width: 35%;
-  }
-
-}
-
-
+		img {
+			max-width: 35%;
+		}
+	}
 </style>

@@ -1,32 +1,94 @@
 <script>
+   import Menu from "$lib/components/Menu.svelte";
+  
+  export let image;
+  let close;
+  let openImg;
+  let text;
+  export let open = false;
+ 
+  export let closeMenu = () => {
+    close.style.display = "none";
+    openImg.style.display = "flex";
+    text.style.visibility = "hidden";
+    open = true;
+  };
 
 
-
+  export let openMenu = () => {
+    openImg.style.display = "none";
+    close.style.display = "flex";
+    text.style.visibility = "visible";
+    open = false;
+  };
 
 </script>
 
-
 <header>
+  <h1>FDND.</h1>
 
-<h1>FDND.</h1>
+  <div>
 
-<p>menu</p>
-
+    <div class="container">
+      <img
+      
+        bind:this={close}
+        on:click={closeMenu}
+        src="close.svg"
+        alt="closeImg"
+      />
+      <img
+        class="close"
+        bind:this={openImg}
+        on:click={openMenu}
+        src={image}
+        alt="hamburgerImg"
+      />
+    </div>
+    <p  bind:this={text}>Menu</p>
+  </div>
 </header>
 
-
-
-
+{#if (open)}
+<Menu/>
+{/if}
 
 
 
 <style>
-
-header{
+  header {
     display: flex;
-  justify-content: space-between;
-  background-color: aliceblue;
-}
+    justify-content: space-between;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+  
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  .close {
+    display: none;
+  }
 
 
 </style>

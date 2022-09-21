@@ -1,11 +1,10 @@
 import createClient from '$lib/prismicClient'
 
 export async function load({ fetch, request }) {
-	const UID = '1';
 	const client = createClient({ fetch, request });
-	const document = await client.getByUID('mijndata', UID);
+	const document = await client.getAllByType('visitekaartje');
 
-  console.log(document);
+//   console.log(document);
 
 	if (document) {
 		return { document };
@@ -13,5 +12,4 @@ export async function load({ fetch, request }) {
 
 	error(404, 'Not found');
 }
-
 

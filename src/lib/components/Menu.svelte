@@ -22,8 +22,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        background-color:rgba(26, 26, 26, 1);
+        position: absolute;
+        background-color:black;
         top: 0;
         width: 100vw;
         height: 100vh;

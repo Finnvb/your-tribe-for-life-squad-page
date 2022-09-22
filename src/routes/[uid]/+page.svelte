@@ -76,7 +76,10 @@
 		padding: 2rem 2rem;
 		text-align: center;
 		background-color: rgba(91, 91, 91, 1);
-		width: 80vw;
+	   width: 100%;
+	   height: 70vh;
+	   margin: 1em;
+	   margin-top: -.5em;
 	}
 	.detailcard h2 {
 		font-size: 2.5em;
@@ -134,17 +137,15 @@
 			height: 80vh;
 		}
 		.detailcard h2 {
-			font-size: 4.5rem;
+			font-size: 3rem;
 		}
 	}
 
 	@media (min-width: 50rem) {
-		.detailcard {
-			text-align: start;
-		}
+
 		.detailcard h2 {
 			position: absolute;
-			font-size: 5.5rem;
+			font-size: 4rem;
 		}
 
 		img {
@@ -152,7 +153,7 @@
 		}
 
 		.Info {
-			text-align: start;
+			text-align: center;
 		}
 	}
 
@@ -161,15 +162,20 @@
 	@media (min-width: 65rem) {
 		.info-container {
 			flex-direction: row;
-			gap: 5.5em;
+			gap:12em;
+			margin: 0 auto;
+		}
+
+		.Info{
+	    	text-align: start;
 		}
 
 		.detailcard h2 {
-			font-size: 3rem;
+			font-size: 4rem;
 		}
 
 		img {
-			max-width: 35%;
+			max-width: 36%;
 		}
 
 		

@@ -9,7 +9,7 @@
         <li><a href="/">HOME</a></li>
         <li><a href="/">LEERJAREN</a></li>
         <li><a href="/">SQUADS</a></li>
-        <li><a href="/test">ABOUT US</a></li>
+        <li><a href="/About">ABOUT US</a></li>
     </nav>
 
     <Footer name={"FDND"}/>
@@ -22,8 +22,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        background-color: black;
+        position: relative;
+        background-color:rgba(26, 26, 26, 1);
         top: 0;
         width: 100vw;
         height: 100vh;

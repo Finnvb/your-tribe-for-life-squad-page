@@ -1,5 +1,6 @@
 <script>
 	import Header from "$lib/components/Header.svelte";
+	import Menu from "$lib/components/Menu.svelte";
 </script>
 
 <Header image={"hamburgerMenu.svg"} />
@@ -7,7 +8,9 @@
 <section class="about container">
 	<section class="about">
 		<h1>ABOUT US.</h1>
-		<p>Bij de Ad Frontend Design & Development doe je alles met code: met code	los je een parkeerprobleem op voor de Gemeente    Amsterdam, ontwerp je voor
+		<p
+			>Bij de Ad Frontend Design & Development doe je alles met code: met code
+			los je een parkeerprobleem op voor de Gemeente Amsterdam, ontwerp je voor
 			het systeem van de Openbare Bibliotheek een betere zoekfunctie, en help je
 			samen met de verpleegkundigen van het Amsterdam UMC de zorg te verbeteren. <br
 			/>Je richt je tijdens deze tweejarige studie op webdesign, visual
@@ -17,7 +20,7 @@
 		>
 	</section>
 
-	<section class="image-container">
+	<section class="shortinfo">
 		<img src="/assets/images/fdnd.svg" alt="Fdnd" />
 		<p
 			>Laat je inspireren door alle studenten van leerjaar 1 & 2 van FDND, maak
@@ -39,8 +42,6 @@
 		flex-direction: column;
 		background-color: rgba(91, 91, 91, 1);
 		color: white;
-		z-index: -99;
-		position: relative;
 		height: 100%;
 		margin: 1em;
 		margin-top: 0.5em;
@@ -65,7 +66,7 @@
 		padding-bottom: 3em;
 	}
 
-	.image-container {
+	.shortinfo {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -108,26 +109,25 @@
 		.about > p {
 			text-align: start;
 			font-size: 1.3em;
-      padding-left: 2.8em;
-		
+			padding-left: 2.8em;
 		}
 
-		.image-container {
+		.shortinfo {
 			display: flex;
 			flex-direction: row;
 		}
-		.image-container > img {
+		.shortinfo > img {
 			width: 85%;
 			padding-left: 4.5em;
 			padding-bottom: 4em;
 		}
 
-		.image-container > p {
+		.shortinfo > p {
 			text-align: start;
 			font-size: 1.3em;
 		}
 
-		.image-container span {
+		.shortinfo span {
 			font-weight: 900;
 			text-decoration-line: underline;
 			text-decoration-style: solid;
@@ -146,5 +146,4 @@
 			padding-bottom: 4em;
 		}
 	}
-
 </style>

@@ -16,8 +16,7 @@
 			/>Je richt je tijdens deze tweejarige studie op webdesign, visual
 			interface design en frontend development.<br /> Vanaf het begin van de opleiding
 			werk je aan actuele opdrachten van échte opdrachtgevers, en leer je samenwerken
-			in multidisciplinaire teams.</p
-		>
+			in multidisciplinaire teams.</p>
 	</section>
 
 	<section class="shortinfo">

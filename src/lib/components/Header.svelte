@@ -63,8 +63,6 @@
     font-weight: bold;
     font-size: 1.5rem;
     padding: 1rem;
-
-  
   }
 
   div {
@@ -85,6 +83,8 @@
 
   img {
     cursor: pointer;
+    z-index: 999;
+  
   }
 
   .close {

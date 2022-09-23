@@ -23,11 +23,11 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        background-color: black;
+        background-color:black;
         top: 0;
         width: 100vw;
         height: 100vh;
-        z-index: -1;
+        z-index:998;
         color: #ffffff;
         opacity: 100;
       

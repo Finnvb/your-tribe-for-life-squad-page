@@ -85,6 +85,7 @@
 
   img {
     cursor: pointer;
+    z-index: 9999;
   }
 
   .close {

@@ -9,7 +9,7 @@
         <li><a href="/">HOME</a></li>
         <li><a href="/">LEERJAREN</a></li>
         <li><a href="/">SQUADS</a></li>
-        <li><a href="/">ABOUT US</a></li>
+        <li><a href="/about">ABOUT US</a></li>
     </nav>
 
     <Footer name={"FDND"}/>
@@ -27,7 +27,7 @@
         top: 0;
         width: 100vw;
         height: 100vh;
-        z-index: -1;
+        z-index: 999;
         color: #ffffff;
         opacity: 100;
       
